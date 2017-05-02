@@ -26,11 +26,11 @@ class Minesweeper:
         y_coord = 0
         for x in range(0, 64):
             mine = 0
-            gfx = self.tile_plain
+            img = self.tile_plain
 
             
             # instantiate button, key [x] is called from the previously set dictionary
-            self.buttons[x] = [Button(frame, image = gfx),mine,0,x,[x_coord, y_coord], 0]
+            self.buttons[x] = [Button(frame, image = img),mine,0,x,[x_coord, y_coord], 0]
                                                         
             # calculate coords:
             y_coord += 1
