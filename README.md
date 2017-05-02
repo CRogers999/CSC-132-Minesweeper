@@ -1,2 +1,2 @@
 # CSC-132-Minesweeper
-Our variant of minesweeper
+This is a collective draft of what we need to achieve eventually
