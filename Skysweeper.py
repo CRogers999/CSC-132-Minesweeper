@@ -44,11 +44,26 @@ class Minesweeper:
         for x in self.buttons:
             self.buttons[x][0].grid( row = self.buttons[x][4][0], column = self.buttons[x][4][1] )
 
-
+        self.buttons[x][0].bind('<Button-1>',self.leftClick_wrapper(value))
+        self.buttons[x][0].bind('<Button-3>',self.rightClick_wrapper(value))
     #need to add mines outside of init i think, or else the class would have to be repeatedly instantiated
     def addMines():
 
     
+    def leftClick_wrapper(self, value):
+        return 
+    
+    def rightClick_wrapper(self, value):
+        return 
+
+    
+    def rightClick(self,value):
+        
+        
+    def leftClick(self, value):
+        
+        
+
 def main():
     global game
     #create Tk widget
