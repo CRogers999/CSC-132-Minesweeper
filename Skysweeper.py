@@ -7,7 +7,7 @@ class Minesweeper:
     def __init__(self, master):
         self.tile_plain = PhotoImage(file = "images/tile_plain.gif")
 
-
+        #used for numbers on tiles for mine proximity
         #self.tile_no = []
         #for x in range(1, 9):
         #    self.tile_no.append(PhotoImage(file = "images/tile_"+str(x)+".gif"))
