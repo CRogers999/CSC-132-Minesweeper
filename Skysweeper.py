@@ -51,17 +51,21 @@ class Minesweeper:
 
     
     def leftClick_wrapper(self, value):
-        return 
+        return lambda Button: self.leftClick(value)
     
     def rightClick_wrapper(self, value):
-        return 
+        return lambda Button: self.rightClick(value)
 
     
-    def rightClick(self,value):
+    def rightClick(self,btn)
+            
+            
         
-        
-    def leftClick(self, value):
-        
+    def leftClick(self, btn):
+        check = self.buttons[x][#status, being 0 or 1 ]
+        if check == 1:
+            
+             
         
 
 def main():
