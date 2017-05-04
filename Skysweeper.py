@@ -23,23 +23,46 @@ class Minesweeper:
         self.buttons = {}
         x_input = 1
         y_input= 0
-        for x in range(0, 64):
-            mine = 0
-            img = self.tile_plain
+        
+        
+        def small_grid(self):
+            for x in range(0, 64):
+                mine = 0
+                img = self.tile_plain
 
-            #reword 
-            # instantiate button, key [x] is called from the previously set dictionary
-            self.buttons[x] = [Button(frame, image = img),mine,0,x,[x_input, y_input], 0]
-                                                        
-            # calculate coords:
-            y_input += 1
-            
-            if y_input == 8:
-                y_input = 0
-                x_input += 1
+                #reword 
+                # instantiate button, key [x] is called from the previously set dictionary
+                self.buttons[x] = [Button(frame, image = img),mine,0,x,[x_input, y_input], 0]
 
-            print str(x_input)+ "," +str(y_input)
+                # calculate coords:
+                y_input += 1
+
+                if y_input == 8:
+                    y_input = 0
+                    x_input += 1
+
+                print str(x_input)+ "," +str(y_input)
             
+        def big_grid(self):
+             for x in range(0, 144):
+                mine = 0
+                img = self.tile_plain
+
+                #reword 
+                # instantiate button, key [x] is called from the previously set dictionary
+                self.buttons[x] = [Button(frame, image = img),mine,0,x,[x_input, y_input], 0]
+
+                # calculate coords:
+                y_input += 1
+
+                if y_input == 12:
+                    y_input = 0
+                    x_input += 1
+
+                print str(x_input)+ "," +str(y_input)    
+        
+        
+        
         # lay buttons in grid
         for x in self.buttons:
             self.buttons[x][0].grid( row = self.buttons[x][4][0], column = self.buttons[x][4][1] )
